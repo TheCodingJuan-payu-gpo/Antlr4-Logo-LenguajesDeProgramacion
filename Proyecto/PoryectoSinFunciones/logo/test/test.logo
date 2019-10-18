@@ -1,0 +1,30 @@
+def moveRotate(angle, dist):
+rot_r angle
+move_forw dist
+end_def
+def makeHorizontalLine():
+set_color 0,0,0,0
+move_forw 50
+rot_l 180
+set_color 255,255,255,255
+move_forw 100
+rot_l 180
+set_color 0,0,0,0
+move_forw 50
+end_def
+let a = 0
+while a < 3 do
+println a
+a = a + 1
+end_while
+if a == 3 + 2 * (8-1) then
+println "hola"
+end_if
+makeHorizontalLine()
+set_color 255,255,255,255
+rot_r 90
+move_forw 200
+moveRotate(45,50)
+moveRotate(45,50)
+moveRotate(45,50)
+moveRotate(45,50)
